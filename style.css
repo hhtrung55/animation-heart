@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    cursor: none;
+    background-image: url("./love.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+span{
+    background: url(https://cdn2.iconfinder.com/data/icons/lin/128/14.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    /*--------------Third------------*/
+    animation: animation 7s linear;
+}
+@keyframes animation{
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        /*-------Fourth----------*/
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        /*-------Fourth----------*/
+        filter: hue-rotate(720deg);
+    }
+}
